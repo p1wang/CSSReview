@@ -1,12 +1,149 @@
-.title {
-    color:red
+body {
+    background: linear-gradient(-100deg, rgba(236, 234, 68, 0.5),rgba(235, 38, 176, 0.452));
+    font-size: 1.15em;
+    text-align: justify;
+    font-family: 'Mukta Malar', sans-serif;
+}
+
+#title {
+    color: #f5a742;
+    font-family: 'Mukta Malar', sans-serif;
+    font-weight: 600;
 }
 
 .subtitle {
-    color:blue
+    color: #df56bc;
+    font-weight: 300;
 }
 
-#contact-us {
-    color:green
+#service-image {
+    height: 400px;
+    width: 70%;
+    background: linear-gradient(to right, red, pink, steelblue, yellow);
+    background-size: cover;
 }
+
+#service-image-radial {
+    height: 400px;
+    width: 70%;
+    background: radial-gradient(circle, red 20%, blue, green);
+    background-size: cover;
+}
+
+#service-image2 {
+    height: 400px;
+    width: 70%;
+    background: linear-gradient(to top, rgb(94, 255, 126), rgba(94, 255, 126, 0.2));
+    background-size: cover;
+
+}
+
+#service-image-angle {
+    height: 400px;
+    width: 70%;
+    background: linear-gradient(170deg, rgb(94, 255, 126), rgba(94, 255, 126, 0.2));
+    background-size: cover;
+}
+
+.link {
+    text-decoration-line: underline;
+}
+
+#about-us-image {
+    height: 300px;
+    width: 60%;
+    border: 6px solid rgb(0, 0, 0);
+    padding: 20px;
+    margin: 20px; 
+}
+
+.container {
+    background-color: rgb(250, 250, 250);
+    margin: 10px;
+    height: 300px;
+    display: flex;    
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-item {
+    background: rgb(36, 130, 39);
+    color: white;
+    font-size: 25px;
+    text-align: center;
+
+    width: 70px;
+    line-height: 50px;
+    margin: 10px;
+}
+
+.grid-container{
+    background-color: rgb(250, 250, 250);
+    margin: 10px;
+    height: 500px;
+    
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    /* grid-gap: 300px 150px; */
+    /* justify-content: space-around; */
+    /* align-content: end; */
+}
+
+.grid-item {
+    color: black;
+    font-size: 25px;
+    text-align: center;
+
+    width: 70px;
+    line-height: 40px;
+    margin: 10px;
+}
+
+.submit-button {
+    margin: 20px 10px;
+    padding: 5px 15px;
+    border: none;
+    text-decoration: none;
+    font-family: 'Mukta Malar', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    background: rgb(89, 150, 255);
+    /* transform: translate(50px, 30px); */
+    /* transform: scale(); */
+    transform: rotate(-40deg);
+    /* transform: matrix(1, 0.45, 0.45, 1, 100, 50 ); */
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+}
+
+.submit-button:hover {
+    background: rgb(147, 187, 255);
+    padding: 10px 20px;
+}
+
+
+#about-me {
+    /* animation-name: red-to-black;
+    animation-duration: 4s;
+    animation-timing-function: ease linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+
+    animation: red-to-black 4s linear 0s infinite alternate-reverse
+}
+
+
+@keyframes red-to-black {
+    0% {background: pink; transform: translate(0px, 0px);}
+    50% {background: orange; transform: translate(10px, 10px);}
+    100% {background: yellow; transform: translate(20px, 20px);}
+}
+
 
